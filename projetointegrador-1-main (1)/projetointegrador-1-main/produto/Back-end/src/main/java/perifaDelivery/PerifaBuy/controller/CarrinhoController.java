@@ -73,5 +73,10 @@ public class CarrinhoController implements WebMvcConfigurer {
 		repository.deleteById(id);
 	}
 	
+	@DeleteMapping("/delete")
+	public void delete() {
+		repository.deleteAll();
+	}
+	
 	
 }
